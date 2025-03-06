@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowFox Informática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .banner-image {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card-img-top {
+            width: 50%;
+            padding-top: 1rem;
+        }
+
+        article h1 {
+            padding: 30px;
+            font-size: 5rem;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        article p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+
+        article h2 {
+            text-align: center;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+
+        @media (max-width: 1000px) {
+            article h1 {
+                font-size: 3.5rem;
+            }
+
+            article p {
+                font-size: 1rem;
+            }
+
+            .banner-image {
+                content: url('/mysite/img/bannersnowfox12-alternative.png');
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+                style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif">
+                <img src="/mysite/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                SnowFox
+            </a>
+            <form class="d-flex p-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit"><img width="20px" height="20px"
+                        src="/mysite/img/lupa.png" alt=""></button>
+            </form>
+        </div>
+    </nav>
+
+    <article>
+        <div>
+            <div>
+                <img src="/mysite/img/bannersnowfox12.png" alt="Banner" class="banner-image">
+            </div>
+            <div>
+                <h1>Quem Somos?</h1>
+            </div>
+            <div style="width: 70%; height: 20%; padding-bottom:10%;" class="container-fluid">
+                <p>A Snow Fox Informática é uma empresa especializada em oferecer soluções completas e de alta qualidade
+                    no setor de tecnologia. Somos altamente capacitados, nos dedicamos a fornecer serviços de
+                    reparo de computadores, instalação e configuração de sistemas operacionais, manutenção de hardware,
+                    e suporte técnico personalizado para atender tanto a empresas quanto a consumidores finais.
+                </p>
+            </div>
+            <div class="container-fluid">
+                <h1>Nossos serviços</h1>
+                <div class="row d-flex justify-content-center">
+
+                    <div class="card border border-dark" style="width: 25rem; margin: 10px;">
+                        <img src="/mysite/img/manutencao.png" class="card-img-top d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Manutenção de Computadores</h2>
+                            <p class="card-text">Manutenção ágil e eficiente para notebooks e desktops</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#manutencaoModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="manutencaoModal" tabindex="-1" aria-labelledby="manutencaoModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="manutencaoModalLabel">Manutenção de Computadores</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    A SnowFox oferece serviços rápidos e eficientes de manutenção para notebooks e
+                                    desktops,
+                                    incluindo limpeza interna, verificação de hardware, otimização de desempenho e muito
+                                    mais.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://wa.me/qr/SIQGL6SFCTYPD1" type="button"
+                                        class="btn btn-success">Whatsapp</a>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card border border-dark" style="width: 25rem; margin: 10px;">
+                        <img src="/mysite/img/sistemasoperacionais.png" class="card-img-top d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Instalação de Sistemas Operacionais</h2>
+                            <p class="card-text">Instalação rápida e eficiente de sistemas operacionais</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#sistemasOperacionaisModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="sistemasOperacionaisModal" tabindex="-1"
+                        aria-labelledby="sistemasOperacionaisModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sistemasOperacionaisModalLabel">Instalação de Sistemas
+                                        Operacionais</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Realizamos a instalação e configuração de sistemas operacionais, como Windows e
+                                    Linux, garantindo
+                                    um processo rápido e eficiente com a melhor compatibilidade para seu hardware.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://wa.me/qr/SIQGL6SFCTYPD1" type="button"
+                                        class="btn btn-success">Whatsapp</a>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card border border-dark" style="width: 25rem; margin: 10px;">
+                        <img src="/mysite/img/suporte-tecnico.png" class="card-img-top d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Suporte Técnico</h2>
+                            <p class="card-text">Oferecemos suporte técnico de alta qualidade para resolver seus
+                                problemas</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#suporteTecnicoModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="suporteTecnicoModal" tabindex="-1"
+                        aria-labelledby="suporteTecnicoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="suporteTecnicoModalLabel">Suporte Técnico</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nosso suporte técnico resolve qualquer problema técnico, seja com hardware, software
+                                    ou redes.
+                                    Contamos com uma equipe experiente e pronta para atender às suas necessidades.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://wa.me/qr/SIQGL6SFCTYPD1" type="button"
+                                        class="btn btn-success">Whatsapp</a>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card border border-dark" style="width: 25rem; margin: 10px;">
+                        <img src="/mysite/img/recuperacao.png" class="card-img-top d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Recuperação de Dados</h2>
+                            <p class="card-text">Recuperamos dados apagados de HD's e pendrives</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#recuperacaoDadosModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="recuperacaoDadosModal" tabindex="-1"
+                        aria-labelledby="recuperacaoDadosModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="recuperacaoDadosModalLabel">Recuperação de Dados</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Recuperamos dados de HDs, pendrives e outros dispositivos de armazenamento
+                                    danificados ou corrompidos.
+                                    Se você perdeu arquivos importantes, podemos ajudar a recuperá-los.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://wa.me/qr/SIQGL6SFCTYPD1" type="button"
+                                        class="btn btn-success">Whatsapp</a>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="padding-top: 10rem;" class="d-flex justify-content-center align-items-center"
+                style="height: 100vh;">
+                <div>
+                    <h1>Contato</h1>
+                    <div class="container overflow-hidden text-center">
+                        <div class="row gx-4">
+                            <div class="col">
+                                <div class="p-1">
+                                    <div style="width: 15rem; height: 15rem;" class="card">
+                                        <div class="card-body container-fluid border border-dark">
+                                            <img src="/mysite/img/email.png" class="card-img-top d-block mx-auto"
+                                                alt="">
+                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                data-bs-target="#email">Email</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="email" tabindex="-1"
+                                aria-labelledby="emailModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="emailModalLabel">Contato de Email
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p id="textoCopiar">snowfoxcomercial@gmail.com</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-1">
+                                    <div style="width: 15rem; height: 15rem;" class="card">
+                                        <div class="card-body container-fluid border border-dark">
+                                            <img src="/mysite/img/whatsapp.png" class="card-img-top d-block mx-auto"
+                                                alt="">
+                                            <a href="https://wa.me/qr/SIQGL6SFCTYPD1" type="button"
+                                                class="btn btn-dark">Whatsapp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+        
+        function copiarTexto() {
+            var texto = document.getElementById("textoCopiar").innerText;
+
+            navigator.clipboard.writeText(texto).then(function() {
+                alert('Texto copiado para a área de transferência!');
+            }).catch(function(error) {
+                alert('Falha ao copiar: ' + error);
+            });
+        }
+    </script>
+</body>
+
+</html>
